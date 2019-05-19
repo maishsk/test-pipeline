@@ -4,7 +4,7 @@ pipeline {
     stage('initial') {
       agent any
       steps {
-        git(url: 'git@github.com:maishsk/test-pipeline.git', poll: true)
+        git(url: 'https://github.com/maishsk/test-pipeline.git', poll: true)
       }
     }
   }
